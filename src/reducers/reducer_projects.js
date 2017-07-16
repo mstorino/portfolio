@@ -1,0 +1,28 @@
+export default function(){
+	return [
+		{ 	featured: true,
+			number: 'I',
+			title: 'Buber', 
+			githubrep: 'https://github.com/mstorino/buber', 
+			summary: 'Web application to assist in taking food orders, calculation of the monetary transaction, and displaying orders to the cook.', 
+			technologiesUsed: 'Bootstrap, jQuery, Pressure.js, Moment.js, Firebase', 
+			image1: "assets/img/github3.png", 
+		},
+		{ 	featured: true,
+			number: 'II',
+			title: 'TutorKarma', 
+			githubrep: 'https://github.com/mstorino/tutorkarma', 
+			summary: 'Web application to assist in taking food orders, calculation of the monetary transaction, and displaying orders to the cook.', 
+			technologiesUsed: 'Bootstrap, jQuery, Pressure.js, Moment.js, Firebase', 
+			image1: "url('../assets/css/portfolio3.jpg')", 
+		},
+		{ 	featured: true,
+			number: 'III',
+			title: 'Concession Butler', 
+			githubrep: 'https://github.com/mstorino/concessionbutler', 
+			summary: 'Web application to assist in taking food orders, calculation of the monetary transaction, and displaying orders to the cook.', 
+			technologiesUsed: 'Bootstrap, jQuery, Pressure.js, Moment.js, Firebase', 
+			image1: "url('../assets/css/portfolio3.jpg')", 
+		},
+	]
+}

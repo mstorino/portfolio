@@ -1,0 +1,23 @@
+STATE: single plain js object
+	1) Component State:
+	2) App State: Redux is in charge of app state. It is completely different & separate from component state.
+
+REDUCERs: App state is formed by reducers. Reducers are tied togetehr with combineReducers method in reducers index.js.  
+For each key in combineReducers object, we assign one reducer that is responsbille for creting piece of state. 
+So whatever activeBook: ActiveBook reducer returns will be avail as activeBook piece of state.
+
+	- in charge of changing app state over time through use of ACTIONS. So whenever action is dispatched it flows thru 
+	all the reducers in app. And each reducer has option to return dif piece of state based on action received.
+
+ACTIONS: 
+	- 	action creators: simple fxm that return action
+	-	action plain js object. Must always have type defined and may have payload (whenever pass data along w/ action)
+
+//SECTION 5
+
+MIDDLEWARE: Async API / AJAX call
+	-	w/ redux centralize login into reducers, react components are only in charge of views not ajax re
+
+
+
+
