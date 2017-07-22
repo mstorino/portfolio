@@ -4,13 +4,47 @@ import TopNav from './top-nav';
 import BottomNav from './bottom-nav';
 
 export default class Home extends Component {
+  
+  
+  
+    
+  componentDidMount() {
+    this.state = {
+      color:'pink'
+    }
+    window.addEventListener('mousedown', this.pageHover, false);
+  }
+
+  pageHover(e) {
+    if (this.onMouseOver) {
+        return;
+    }
+
+    //showImg Boolean that when true show img and on false hides it.
+
+    this.setState({
+        color: 'blue'
+    });
+  }
+
+  mouseOverHandler() {
+      this.mouseOver = true;
+  }
+
+  mouseLeaveHandler() {
+      this.mouseLeave = false;
+  }
+
+
+
   render() {
     return (
       <div>
       	<TopNav />
       	
+      	
 		<section className="container-fluid rw-wrapper borderBox heroContainer">
-		  <div className ="row ">
+		  <div className ={this.state.color}>
 		    <div className="col-md-12">
 		      <h1 className="rw-sentence borderBox">
 
@@ -35,7 +69,10 @@ export default class Home extends Component {
 
 
 
-      	<BottomNav />
+      	<BottomNav 
+          pageHover={this.pageHover}
+
+        />
       </div>
     );
   }

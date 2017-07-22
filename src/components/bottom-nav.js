@@ -3,7 +3,35 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 
-export default class BottomNav extends Component {
+class BottomNav extends Component {
+
+constructor(props) {
+  super(props);
+  // this.state ={ color: 'pink' };
+
+  // this.handleOnMouseOver = this.handleOnMouseOver.bind(this);
+  // this.handleOnMouseLeave = this.handleOnMouseLeave.bind(this);
+}
+
+
+
+
+
+  // handleOnMouseOver(){
+  //   return(
+  //     this.setState({color:'blue'})
+  //   );
+  // }
+
+  // handleOnMouseLeave(){
+  //   return(
+  //     this.setState({color:'red'})
+  //   );
+  // }
+
+
+   // <Link className={this.state.color} to="/blog" onMouseOver={this.handleOnMouseOver} onMouseLeave={this.handleOnMouseLeave}>Test</Link>
+
   render() {
     return (
 
@@ -12,7 +40,10 @@ export default class BottomNav extends Component {
      
         <div>
           <ul className="nav navbar-nav bottomList">
-            
+            <li>
+              <Link className={this.state.color} to="/blog" onMouseOver={this.props.onMouseOver} onMouseLeave={this.props.onMouseLeave}>Test</Link>
+            </li>
+
             <li>
               <Link className="blogLink" to="/blog">Blog</Link>
             </li>
@@ -38,6 +69,6 @@ export default class BottomNav extends Component {
   }
 }
 
-
+export default BottomNav;
 
 

@@ -3,8 +3,8 @@ import ProjectsReducer from './reducer_projects';
 import RolesReducer from './reducer_roles';
 import ActiveProject from './reducer_active_project';
 
-//add key to global application state called books (key books and value is whatever is returned from booksreducer)
-//state always equal to object w/ a key books, value that's an array of books
+//add key to global application state called projects (key projects and value is whatever is returned from projectsreducer)
+//state always equal to object w/ a key projects, value that's an array of projects
 
 const rootReducer = combineReducers({
   projects: ProjectsReducer,

@@ -32,28 +32,6 @@ class ProjectList extends Component {
 				);
 		});
 
-		/*
-if (project.featured){
-			// if true, return some html
-			// else
-			// return some other html
-				return (
-					<li 
-						key={project.title} 
-						onClick={()=> this.props.selectProject(project)}	
-						className="list-group-item projectItem">
-						<p className="projectListNumber">{project.number}.</p>
-						<h1 className="projectListTitle">{project.title}</h1>
-					</li>
-				);
-			}
-			else {
-				//something
-			}
-		*/
-	
-	}
-
 	//calls renderList fxn
 	
 	render() {
