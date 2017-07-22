@@ -8,32 +8,30 @@ export default class Home extends Component {
   
   
     
-  componentDidMount() {
-    this.state = {
-      color:'pink'
-    }
-    window.addEventListener('mousedown', this.pageHover, false);
-  }
+  // componentDidMount() {
+  //   this.state = {
+  //     color:'pink'
+  //   }
+  //   window.addEventListener('mousedown', this.pageHover, false);
+  // }
 
-  pageHover(e) {
-    if (this.onMouseOver) {
-        return;
-    }
+  // pageHover(e) {
+  //   if (this.onMouseOver) {
+  //       return;
+  //   }
 
-    //showImg Boolean that when true show img and on false hides it.
+  // this.setState({
+  //       color: 'blue'
+  //   });
+  // }
 
-    this.setState({
-        color: 'blue'
-    });
-  }
+  // mouseOverHandler() {
+  //     this.mouseOver = true;
+  // }
 
-  mouseOverHandler() {
-      this.mouseOver = true;
-  }
-
-  mouseLeaveHandler() {
-      this.mouseLeave = false;
-  }
+  // mouseLeaveHandler() {
+  //     this.mouseLeave = false;
+  // }
 
 
 
@@ -44,7 +42,7 @@ export default class Home extends Component {
       	
       	
 		<section className="container-fluid rw-wrapper borderBox heroContainer">
-		  <div className ={this.state.color}>
+		  <div>
 		    <div className="col-md-12">
 		      <h1 className="rw-sentence borderBox">
 

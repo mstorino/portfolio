@@ -31,6 +31,7 @@ class ProjectList extends Component {
 					</li>
 				);
 		});
+	}
 
 	//calls renderList fxn
 	

@@ -32,6 +32,9 @@ constructor(props) {
 
    // <Link className={this.state.color} to="/blog" onMouseOver={this.handleOnMouseOver} onMouseLeave={this.handleOnMouseLeave}>Test</Link>
 
+    // <li>
+    //           <Link className={this.state.color} to="/blog" onMouseOver={this.props.onMouseOver} onMouseLeave={this.props.onMouseLeave}>Test</Link>
+    //         </li>
   render() {
     return (
 
@@ -40,9 +43,7 @@ constructor(props) {
      
         <div>
           <ul className="nav navbar-nav bottomList">
-            <li>
-              <Link className={this.state.color} to="/blog" onMouseOver={this.props.onMouseOver} onMouseLeave={this.props.onMouseLeave}>Test</Link>
-            </li>
+           
 
             <li>
               <Link className="blogLink" to="/blog">Blog</Link>
