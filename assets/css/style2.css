@@ -355,7 +355,7 @@ ul, .aboutLinks{
 }
 
 .codeContainer {
-	height: 400px;
+	min-height: 400px;
 	border-top: 4px solid papayawhip;
 	border-bottom: 4px solid mistyrose;
 	border-right: 4px solid papayawhip;
@@ -392,8 +392,8 @@ ul, .aboutLinks{
 	padding-top: 20px;
 }
 .screenshot {
-	height:100px;
-	width: 100px;
+	height:200px;
+	width: 388px;
 	background-color: mistyrose;
 	margin: 0 auto;
 }
@@ -410,4 +410,8 @@ ul, .aboutLinks{
 
 .projectItem {
 	padding-bottom: 26px;
+}
+
+.detailText {
+	text-align: justify;
 }

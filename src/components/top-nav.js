@@ -20,10 +20,10 @@ export default class TopNav extends Component {
 		            </li>
 		              
 		            <li>
-		              <Link className="navbar-link socialLinks" to="mailto:maggiestorino@gmail.com?subject=Hello Maggie"><img border="0" alt="contact" src="assets/img/contact2.png" width="36" height="36"/></Link>
+		              <a className="navbar-link socialLinks" href="mailto:maggiestorino@gmail.com?subject=Hello Maggie"><img border="0" alt="contact" src="assets/img/contact2.png" width="36" height="36"/></a>
 		            </li>
 		            <li>
-		              <Link className="navbar-link socialLinks" to="https://www.linkedin.com/in/maggiestorino"><img border="0" alt="linkedin" src="assets/img/linkedin4.png" width="40" height="40"/></Link>
+		              <a className="navbar-link socialLinks" href="https://www.linkedin.com/in/maggiestorino"><img border="0" alt="linkedin" src="assets/img/linkedin4.png" width="40" height="40"/></a>
 		            </li>
 		        
 		      </ul>

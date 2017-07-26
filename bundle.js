@@ -26767,24 +26767,33 @@
 		return [{ featured: true,
 			number: 'I',
 			title: 'Buber',
-			githubrep: 'https://github.com/mstorino/buber',
-			summary: 'Web application to assist in taking food orders, calculation of the monetary transaction, and displaying orders to the cook.',
-			technologiesUsed: 'Bootstrap, jQuery, Pressure.js, Moment.js, Firebase',
-			image1: "assets/img/github3.png"
+			githubrepo: 'https://github.com/mstorino/buber',
+			summary: 'Track the availability of local, trusted babysitters in real time.',
+			technologiesUsed: 'MERN, Bootstrap, Javascript, Node.js, Express, MongoDB, Mongoose, Passport and React.js.',
+			image1: "assets/img/github3.png",
+			detail1: 'Enable caretakers to hire babysitter immediately or in the future. Unlike exisiting sites, Buber only displays sitters within your neighborhood.',
+			detail2: 'Caretakers creat a family profile and see which sitters are available. Stters, create a profile and toggle on/off availability.',
+			detail3: "RESTful routes for server and api calls, create react components for sitter lists and details, front-end design and logos"
 		}, { featured: true,
 			number: 'II',
 			title: 'TutorKarma',
-			githubrep: 'https://github.com/mstorino/tutorkarma',
-			summary: 'Web application to assist in taking food orders, calculation of the monetary transaction, and displaying orders to the cook.',
-			technologiesUsed: 'Bootstrap, jQuery, Pressure.js, Moment.js, Firebase',
-			image1: "url('../assets/css/portfolio3.jpg')"
+			githubrepo: 'https://github.com/mstorino/tutorkarma',
+			summary: 'Community based tutoring application',
+			technologiesUsed: 'Git, Bootstrap, JavaScript, Node, npm, Express.js, MySQL, Schema and Seed files, Sequelize.js, RESTful Routes, External APIs, jQuery and Handlebars.',
+			image1: "url('../assets/css/portfolio3.jpg')",
+			detail1: 'Data-focused application connecting students with tutors in their local community based on area of expertise. tutorKarma utilizes a data persistence layer (MySQL) with full CRUD capabiliites.',
+			detail2: 'Students find and book tutors through a customized student portal that displays tutors based on subject matter or name.',
+			detail3: 'Responsible for API routes, Handlebars, jQuery, design for tutor booking landing pages and logo'
 		}, { featured: true,
 			number: 'III',
 			title: 'Concession Butler',
-			githubrep: 'https://github.com/mstorino/concessionbutler',
-			summary: 'Web application to assist in taking food orders, calculation of the monetary transaction, and displaying orders to the cook.',
+			githubrepo: 'https://github.com/mstorino/concessionbutler',
+			summary: 'Web application to assist in taking food orders',
 			technologiesUsed: 'Bootstrap, jQuery, Pressure.js, Moment.js, Firebase',
-			image1: "url('../assets/css/portfolio3.jpg')"
+			image1: "url('../assets/css/portfolio3.jpg')",
+			detail1: 'Worked with team to develop fluid interactive application that expedites concession purchases',
+			detail2: 'Orders are taken and the total is calculated. Then the order is submitted to the the cook for expediting.',
+			detail3: 'Responsible for cohesive design, graceful mobile-first CSS and lightweight assets and logo'
 		}];
 	};
 
@@ -27044,8 +27053,8 @@
 															'li',
 															null,
 															_react2.default.createElement(
-																	_reactRouterDom.Link,
-																	{ className: 'navbar-link socialLinks', to: 'mailto:maggiestorino@gmail.com?subject=Hello Maggie' },
+																	'a',
+																	{ className: 'navbar-link socialLinks', href: 'mailto:maggiestorino@gmail.com?subject=Hello Maggie' },
 																	_react2.default.createElement('img', { border: '0', alt: 'contact', src: 'assets/img/contact2.png', width: '36', height: '36' })
 															)
 													),
@@ -27053,8 +27062,8 @@
 															'li',
 															null,
 															_react2.default.createElement(
-																	_reactRouterDom.Link,
-																	{ className: 'navbar-link socialLinks', to: 'https://www.linkedin.com/in/maggiestorino' },
+																	'a',
+																	{ className: 'navbar-link socialLinks', href: 'https://www.linkedin.com/in/maggiestorino' },
 																	_react2.default.createElement('img', { border: '0', alt: 'linkedin', src: 'assets/img/linkedin4.png', width: '40', height: '40' })
 															)
 													)
@@ -27520,6 +27529,16 @@
 									_react2.default.createElement(
 										'h3',
 										null,
+										'Github Repo: '
+									),
+									this.props.project.githubrepo
+								),
+								_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+										'h3',
+										null,
 										'Summary: '
 									),
 									this.props.project.summary,
@@ -27533,12 +27552,12 @@
 											_react2.default.createElement(
 												'h3',
 												null,
-												'Frontend Design:'
+												'Purpose'
 											),
 											_react2.default.createElement(
 												'p',
-												null,
-												'This is a summary of the image above.'
+												{ className: 'detailText' },
+												this.props.project.detail1
 											)
 										),
 										_react2.default.createElement(
@@ -27548,12 +27567,12 @@
 											_react2.default.createElement(
 												'h3',
 												null,
-												'Backend:'
+												'Functionality'
 											),
 											_react2.default.createElement(
 												'p',
-												null,
-												'This is a summary of the image above.'
+												{ className: 'detailText' },
+												this.props.project.detail2
 											)
 										),
 										_react2.default.createElement(
@@ -27563,12 +27582,12 @@
 											_react2.default.createElement(
 												'h3',
 												null,
-												'User Experience:'
+												'Development Role'
 											),
 											_react2.default.createElement(
 												'p',
-												null,
-												'This is a summary of the image above.'
+												{ className: 'detailText' },
+												this.props.project.detail3
 											)
 										)
 									)
@@ -27852,7 +27871,13 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'My creative work, the viral project Don\'t Call Me Oscar, has been featured year-after-year by Vanity Fair, People, Huffington Post, Today, Good Morning America, CBS, the Daily Mail, and more, reaching an audience of several million annually. I received a JD at Notre Dame Law School before diving into the world of full stack development at the Creative Circus, Starter League and Northwestern University.'
+	              'My creative work, the viral project ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://www.dontcallmeoscar.com' },
+	                'Don\'t Call Me Oscar'
+	              ),
+	              ', has been featured year-after-year by Vanity Fair, People, Huffington Post, Today, Good Morning America, CBS, the Daily Mail, and more, reaching an audience of several million annually. I received a JD at Notre Dame Law School before diving into the world of full stack development at the Creative Circus, Starter League and Northwestern University.'
 	            )
 	          )
 	        ),
@@ -27889,8 +27914,8 @@
 	                    'li',
 	                    null,
 	                    _react2.default.createElement(
-	                      _reactRouterDom.Link,
-	                      { to: 'https://github.com/mstorino' },
+	                      'a',
+	                      { href: 'https://github.com/mstorino' },
 	                      _react2.default.createElement('img', { border: '0', alt: 'github', src: 'assets/img/github3.png', width: '30', height: '30' }),
 	                      'github.com/mstorino'
 	                    )
@@ -27899,8 +27924,8 @@
 	                    'li',
 	                    null,
 	                    _react2.default.createElement(
-	                      _reactRouterDom.Link,
-	                      { to: 'mailto:maggiestorino@gmail.com?subject=Hello Maggie' },
+	                      'a',
+	                      { href: 'mailto:maggiestorino@gmail.com?subject=Hello Maggie' },
 	                      _react2.default.createElement('img', { border: '0', alt: 'contact', src: 'assets/img/contact.png', width: '30', height: '30' }),
 	                      'maggiestorino@gmail.com'
 	                    )
@@ -27909,8 +27934,8 @@
 	                    'li',
 	                    null,
 	                    _react2.default.createElement(
-	                      _reactRouterDom.Link,
-	                      { to: 'https://www.linkedin.com/in/maggiestorino' },
+	                      'a',
+	                      { href: 'https://www.linkedin.com/in/maggiestorino' },
 	                      _react2.default.createElement('img', { border: '0', alt: 'linkedin', src: 'assets/img/linkedin3.png', width: '30', height: '30' }),
 	                      'linkedin.com/in/maggiestorino'
 	                    )

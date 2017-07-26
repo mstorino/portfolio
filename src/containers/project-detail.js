@@ -41,21 +41,28 @@ class ProjectDetail extends Component {
 									{this.props.project.technologiesUsed}
 								</li>
 								<li>
+									<h3>Github Repo: </h3>
+									{this.props.project.githubrepo}
+								</li>
+								<li>
 									<h3>Summary: </h3>
 									{this.props.project.summary}
 
 										<ul className="row screenshotList">
 								            <li className="col-xs-4 text-center">
 								              <div className="screenshot"></div>
-								              <h3>Frontend Design:</h3><p>This is a summary of the image above.</p>
+								              <h3>Purpose</h3>
+								              <p className='detailText'>{this.props.project.detail1}</p>
 								            </li>
 								            <li className="col-xs-4 text-center">
 								              <div className="screenshot"></div>
-								              <h3>Backend:</h3><p>This is a summary of the image above.</p>
+								              <h3>Functionality</h3>
+								              <p className='detailText'>{this.props.project.detail2}</p>
 								            </li>
 								            <li className="col-xs-4 text-center">
 								              <div className="screenshot"></div>
-								              <h3>User Experience:</h3><p>This is a summary of the image above.</p>
+								              <h3>Development Role</h3>
+								              <p className='detailText'>{this.props.project.detail3}</p>
 								            </li>
 								        </ul>
 

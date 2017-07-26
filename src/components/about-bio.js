@@ -19,7 +19,7 @@ export default class AboutBio extends Component {
         </div>
         
         <div className="col-md-9 borderBox">
-          <p>My creative work, the viral project Don't Call Me Oscar, has been featured year-after-year by Vanity Fair, People, Huffington Post, Today, Good Morning America, CBS, the Daily Mail, and more, reaching an audience of several million annually. I received a JD at Notre Dame Law School before diving into the world of full stack development at the Creative Circus, Starter League and Northwestern University.
+          <p>My creative work, the viral project <a href="https://www.dontcallmeoscar.com">Don't Call Me Oscar</a>, has been featured year-after-year by Vanity Fair, People, Huffington Post, Today, Good Morning America, CBS, the Daily Mail, and more, reaching an audience of several million annually. I received a JD at Notre Dame Law School before diving into the world of full stack development at the Creative Circus, Starter League and Northwestern University.
           </p>
         </div>
 
@@ -40,15 +40,15 @@ export default class AboutBio extends Component {
             <div className="col-md-8">
               <ul className="aboutLinks">
                       <li>
-                        <Link to="https://github.com/mstorino"><img border="0" alt="github" src="assets/img/github3.png" width="30" height="30"/>github.com/mstorino</Link>
+                        <a href="https://github.com/mstorino"><img border="0" alt="github" src="assets/img/github3.png" width="30" height="30"/>github.com/mstorino</a>
                       </li>
                         
                       <li>
-                        <Link to="mailto:maggiestorino@gmail.com?subject=Hello Maggie"><img border="0" alt="contact" src="assets/img/contact.png" width="30" height="30"/>maggiestorino@gmail.com</Link>
+                        <a href="mailto:maggiestorino@gmail.com?subject=Hello Maggie"><img border="0" alt="contact" src="assets/img/contact.png" width="30" height="30"/>maggiestorino@gmail.com</a>
                       </li>
 
                       <li>
-                        <Link to="https://www.linkedin.com/in/maggiestorino"><img border="0" alt="linkedin" src="assets/img/linkedin3.png" width="30" height="30"/>linkedin.com/in/maggiestorino</Link>
+                        <a href="https://www.linkedin.com/in/maggiestorino"><img border="0" alt="linkedin" src="assets/img/linkedin3.png" width="30" height="30"/>linkedin.com/in/maggiestorino</a>
                       </li>
                 </ul>
             </div>
