@@ -27035,8 +27035,8 @@
 															'li',
 															null,
 															_react2.default.createElement(
-																	_reactRouterDom.Link,
-																	{ className: 'navbar-link socialLinks github', to: 'https://github.com/mstorino' },
+																	'a',
+																	{ className: 'navbar-link socialLinks github', href: 'https://github.com/mstorino' },
 																	_react2.default.createElement('img', { border: '0', alt: 'github', src: 'assets/img/github4.png', width: '40', height: '34' })
 															)
 													),
