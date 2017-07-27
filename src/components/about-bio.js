@@ -40,15 +40,15 @@ export default class AboutBio extends Component {
             <div className="col-md-12">
               <ul className="aboutLinks">
                       <li>
-                        <a href="https://github.com/mstorino"><img border="0" alt="github" src="assets/img/github3.png" width="30" height="30"/>github.com/mstorino</a>
+                        <a href="https://github.com/mstorino"><img border="0" alt="github" src="portfolio/assets/img/github3.png" width="30" height="30"/>github.com/mstorino</a>
                       </li>
                         
                       <li>
-                        <a href="mailto:maggiestorino@gmail.com?subject=Hello Maggie"><img border="0" alt="contact" src="assets/img/contact.png" width="30" height="30"/>maggiestorino@gmail.com</a>
+                        <a href="mailto:maggiestorino@gmail.com?subject=Hello Maggie"><img border="0" alt="contact" src="portfolio/assets/img/contact.png" width="30" height="30"/>maggiestorino@gmail.com</a>
                       </li>
 
                       <li>
-                        <a href="https://www.linkedin.com/in/maggiestorino"><img border="0" alt="linkedin" src="assets/img/linkedin3.png" width="30" height="30"/>linkedin.com/in/maggiestorino</a>
+                        <a href="https://www.linkedin.com/in/maggiestorino"><img border="0" alt="linkedin" src="portfolio/assets/img/linkedin3.png" width="30" height="30"/>linkedin.com/in/maggiestorino</a>
                       </li>
                 </ul>
             </div>

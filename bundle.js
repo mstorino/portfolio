@@ -26768,32 +26768,32 @@
 			number: 'I',
 			title: 'Buber',
 			githubrepo: 'https://github.com/mstorino/buber',
-			summary: 'Track the availability of local, trusted babysitters in real time.',
+			summary: 'Babysitting + Uber = Buber. A way to book local, trusted babysitters in real time.',
 			technologiesUsed: 'MERN, Bootstrap, Javascript, Node.js, Express, MongoDB, Mongoose, Passport and React.js.',
 			image1: "assets/img/github3.png",
-			detail1: 'Enable caretakers to hire babysitter immediately or in the future. Unlike exisiting sites, Buber only displays sitters within your neighborhood.',
-			detail2: 'Caretakers creat a family profile and see which sitters are available. Stters, create a profile and toggle on/off availability.',
-			detail3: "RESTful routes for server and api calls, create react components for sitter lists and details, front-end design and logos"
+			detail1: 'Book future appointments or hire immediately. Unlike exisiting sites, Buber only displays sitters within your neighborhood.',
+			detail2: 'Caretakers create a family profile and see which sitters are available. Stters, create a profile and toggle on/off availability.',
+			detail3: "Built RESTful routes for server and api calls, created react components for sitter lists and details, designed front-end and logos"
 		}, { featured: true,
 			number: 'II',
 			title: 'TutorKarma',
 			githubrepo: 'https://github.com/mstorino/tutorkarma',
-			summary: 'Community based tutoring application',
+			summary: 'Community based tutoring application utilizing a data persistence layer (MySQL) with full CRUD capabiliites.',
 			technologiesUsed: 'Git, Bootstrap, JavaScript, Node, npm, Express.js, MySQL, Schema and Seed files, Sequelize.js, RESTful Routes, External APIs, jQuery and Handlebars.',
 			image1: "url('../assets/css/portfolio3.jpg')",
-			detail1: 'Data-focused application connecting students with tutors in their local community based on area of expertise. tutorKarma utilizes a data persistence layer (MySQL) with full CRUD capabiliites.',
+			detail1: 'Data-focused application connecting students with local tutors filtered by area of expertise.',
 			detail2: 'Students find and book tutors through a customized student portal that displays tutors based on subject matter or name.',
-			detail3: 'Responsible for API routes, Handlebars, jQuery, design for tutor booking landing pages and logo'
+			detail3: 'Responsible for API routes, Handlebars, jQuery, design for tutor and user landing pages.'
 		}, { featured: true,
 			number: 'III',
 			title: 'Concession Butler',
 			githubrepo: 'https://github.com/mstorino/concessionbutler',
-			summary: 'Web application to assist in taking food orders',
+			summary: 'Web application for expediting concession stand food orders.',
 			technologiesUsed: 'Bootstrap, jQuery, Pressure.js, Moment.js, Firebase',
 			image1: "url('../assets/css/portfolio3.jpg')",
-			detail1: 'Worked with team to develop fluid interactive application that expedites concession purchases',
+			detail1: 'Developed fluid interactive application that expedites concession purchases',
 			detail2: 'Orders are taken and the total is calculated. Then the order is submitted to the the cook for expediting.',
-			detail3: 'Responsible for cohesive design, graceful mobile-first CSS and lightweight assets and logo'
+			detail3: 'Responsible for cohesive design, graceful mobile-first CSS, lightweight assets and logo'
 		}, { featured: false,
 			number: '',
 			title: 'FriendFinder',
@@ -28019,7 +28019,7 @@
 	                    _react2.default.createElement(
 	                      'a',
 	                      { href: 'https://github.com/mstorino' },
-	                      _react2.default.createElement('img', { border: '0', alt: 'github', src: 'assets/img/github3.png', width: '30', height: '30' }),
+	                      _react2.default.createElement('img', { border: '0', alt: 'github', src: 'portfolio/assets/img/github3.png', width: '30', height: '30' }),
 	                      'github.com/mstorino'
 	                    )
 	                  ),
@@ -28029,7 +28029,7 @@
 	                    _react2.default.createElement(
 	                      'a',
 	                      { href: 'mailto:maggiestorino@gmail.com?subject=Hello Maggie' },
-	                      _react2.default.createElement('img', { border: '0', alt: 'contact', src: 'assets/img/contact.png', width: '30', height: '30' }),
+	                      _react2.default.createElement('img', { border: '0', alt: 'contact', src: 'portfolio/assets/img/contact.png', width: '30', height: '30' }),
 	                      'maggiestorino@gmail.com'
 	                    )
 	                  ),
@@ -28039,7 +28039,7 @@
 	                    _react2.default.createElement(
 	                      'a',
 	                      { href: 'https://www.linkedin.com/in/maggiestorino' },
-	                      _react2.default.createElement('img', { border: '0', alt: 'linkedin', src: 'assets/img/linkedin3.png', width: '30', height: '30' }),
+	                      _react2.default.createElement('img', { border: '0', alt: 'linkedin', src: 'portfolio/assets/img/linkedin3.png', width: '30', height: '30' }),
 	                      'linkedin.com/in/maggiestorino'
 	                    )
 	                  )
