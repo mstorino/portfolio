@@ -7,7 +7,8 @@ export default class Resume extends Component {
   render() {
     return (
 
-      <section className="container-fluid aboutSection">
+      <section className="aboutSection">
+      <div className="container">
         <div className="row">
           <div className="col-md-12 borderBox">
             <h3>Resume</h3>
@@ -69,7 +70,8 @@ export default class Resume extends Component {
             </div>  
           </div>
         </div>
-      <div className="aboutSectionEnd"></div>
+      </div>
+      <div className="container-fluid aboutSectionEnd"></div>
       </section>
 
 

@@ -27327,8 +27327,40 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_topNav2.default, null),
-	        _react2.default.createElement(_projectDetail2.default, null),
-	        _react2.default.createElement(_projectList2.default, null),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'container-fluid rw-wrapper' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'col-md-12 text-center codeHero' },
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'I build beautiful interactive websites.'
+	              ),
+	              _react2.default.createElement(
+	                'h3',
+	                { className: 'codeh3' },
+	                'My apps are below.  If you have a second, ',
+	                _react2.default.createElement('br', null),
+	                ' click one to see the details.'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'container-fluid codeListContainer' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(_projectList2.default, null),
+	            _react2.default.createElement(_projectDetail2.default, null)
+	          )
+	        ),
 	        _react2.default.createElement(_bottomNav2.default, null)
 	      );
 	    }
@@ -27427,19 +27459,27 @@
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
-					'section',
-					{ className: 'projectSection container-fluid' },
+					'div',
+					{ className: 'col-md-4 projectListGroup' },
 					_react2.default.createElement(
-						'div',
-						{ className: 'row' },
-						_react2.default.createElement(
-							'ul',
-							{ className: 'list-group col-md-12' },
-							this.renderList()
-						)
+						'ul',
+						{ className: 'list-group' },
+						this.renderList()
 					)
 				);
 			}
+			// render() {
+			// 	return (
+			// 		<section className="projectSection container-fluid">
+			// 			<div className="row">
+			// 				<ul className="list-group col-md-4">
+			// 					{this.renderList()}
+			// 				</ul>
+			// 			</div>
+			// 		</section>
+			// 	)
+			// }
+
 		}]);
 
 		return ProjectList;
@@ -27540,141 +27580,124 @@
 		_createClass(ProjectDetail, [{
 			key: 'render',
 			value: function render() {
-				//if this.props.book doens't exist yet then return early; initial check in state
+				// if this.props.book doens't exist yet then return early; initial check in state
 				if (!this.props.project) {
 
-					return _react2.default.createElement(
-						'section',
-						{ className: 'container-fluid rw-wrapper codeContainer' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'row' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'col-md-12 text-center codeHero' },
-								_react2.default.createElement(
-									'h1',
-									null,
-									'I build beautiful interactive websites.'
-								),
-								_react2.default.createElement(
-									'h3',
-									{ className: 'codeh3' },
-									'My favorite apps are below.  If you have a second, ',
-									_react2.default.createElement('br', null),
-									' click one to see the details.'
-								)
-							)
-						)
-					);
-					//once they click on a book it will call the app state to rerender at which point this.props.book 
-					//will be defined and then we'll go to the next statement and render the selected book
+					return _react2.default.createElement('div', { className: 'col-md-8' });
 				}
 
-				return _react2.default.createElement(
-					'section',
-					{ className: 'container-fluid codeContainer' },
+				return (
+					// <section className="container-fluid codeContainer">
+					// 	<div className="row">
 					_react2.default.createElement(
 						'div',
-						{ className: 'row' },
+						{ className: 'col-md-8 codeContainer' },
 						_react2.default.createElement(
-							'div',
-							{ className: 'col-md-12' },
+							'ul',
+							null,
 							_react2.default.createElement(
-								'ul',
+								'li',
 								null,
 								_react2.default.createElement(
-									'li',
+									'h3',
 									null,
-									_react2.default.createElement(
-										'h3',
-										null,
-										'Project Title: '
-									),
-									this.props.project.title
+									'Title: '
+								),
+								this.props.project.title
+							),
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement(
+									'h3',
+									null,
+									'Technologies Used: '
+								),
+								this.props.project.technologiesUsed
+							),
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement(
+									'h3',
+									null,
+									'Github Repo: '
 								),
 								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(
-										'h3',
-										null,
-										'Technologies Used: '
-									),
-									this.props.project.technologiesUsed
-								),
-								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(
-										'h3',
-										null,
-										'Github Repo: '
-									),
+									'a',
+									{ href: this.props.project.githubrepo },
 									this.props.project.githubrepo
-								),
+								)
+							),
+							_react2.default.createElement(
+								'ul',
+								{ className: 'row screenshotList' },
 								_react2.default.createElement(
 									'li',
-									null,
+									{ className: 'col-xs-6 text-center detailGroup' },
+									_react2.default.createElement('div', { className: 'screenshot' }),
 									_react2.default.createElement(
 										'h3',
 										null,
-										'Summary: '
+										'Summary'
 									),
-									this.props.project.summary,
 									_react2.default.createElement(
-										'ul',
-										{ className: 'row screenshotList' },
-										_react2.default.createElement(
-											'li',
-											{ className: 'col-xs-4 text-center' },
-											_react2.default.createElement('div', { className: 'screenshot' }),
-											_react2.default.createElement(
-												'h3',
-												null,
-												'Purpose'
-											),
-											_react2.default.createElement(
-												'p',
-												{ className: 'detailText' },
-												this.props.project.detail1
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											{ className: 'col-xs-4 text-center' },
-											_react2.default.createElement('div', { className: 'screenshot' }),
-											_react2.default.createElement(
-												'h3',
-												null,
-												'Functionality'
-											),
-											_react2.default.createElement(
-												'p',
-												{ className: 'detailText' },
-												this.props.project.detail2
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											{ className: 'col-xs-4 text-center' },
-											_react2.default.createElement('div', { className: 'screenshot' }),
-											_react2.default.createElement(
-												'h3',
-												null,
-												'Development Role'
-											),
-											_react2.default.createElement(
-												'p',
-												{ className: 'detailText' },
-												this.props.project.detail3
-											)
-										)
+										'p',
+										{ className: 'detailText' },
+										this.props.project.summary
+									)
+								),
+								_react2.default.createElement(
+									'li',
+									{ className: 'col-xs-6 text-center detailGroup' },
+									_react2.default.createElement('div', { className: 'screenshot' }),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Screenshot 1'
+									),
+									_react2.default.createElement(
+										'p',
+										{ className: 'detailText' },
+										this.props.project.detail1
+									)
+								),
+								_react2.default.createElement(
+									'li',
+									{ className: 'col-xs-6 text-center detailGroup' },
+									_react2.default.createElement('div', { className: 'screenshot' }),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Screenshot 2'
+									),
+									_react2.default.createElement(
+										'p',
+										{ className: 'detailText' },
+										this.props.project.detail2
+									)
+								),
+								_react2.default.createElement(
+									'li',
+									{ className: 'col-xs-6 text-center detailGroup' },
+									_react2.default.createElement('div', { className: 'screenshot' }),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Development Role'
+									),
+									_react2.default.createElement(
+										'p',
+										{ className: 'detailText' },
+										this.props.project.detail3
 									)
 								)
 							)
 						)
 					)
+					// 	</div>
+					// </section>
+
 				);
 			}
 		}]);
@@ -27927,7 +27950,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'section',
-	        { className: 'container-fluid aboutSection' },
+	        { className: 'container aboutSection' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'row' },
@@ -27986,7 +28009,7 @@
 	              { className: 'row' },
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'col-md-8' },
+	                { className: 'col-md-12' },
 	                _react2.default.createElement(
 	                  'ul',
 	                  { className: 'aboutLinks' },
@@ -28021,11 +28044,6 @@
 	                    )
 	                  )
 	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-4' },
-	                'cool image here'
 	              )
 	            )
 	          )
@@ -28204,156 +28222,160 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'section',
-	        { className: 'container-fluid aboutSection' },
+	        { className: 'aboutSection' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row' },
+	          { className: 'container' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'col-md-12 borderBox' },
-	            _react2.default.createElement(
-	              'h3',
-	              null,
-	              'Resume'
-	            ),
-	            _react2.default.createElement('div', { className: 'btn-group' }),
+	            { className: 'row' },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'row resume' },
+	              { className: 'col-md-12 borderBox' },
 	              _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-3' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'assets/img/resume.pdf', download: true },
-	                  _react2.default.createElement(
-	                    'button',
-	                    { className: 'btn btn-default btn-sm', type: 'button', 'aria-haspopup': 'true' },
-	                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-download', 'aria-hidden': 'true' }),
-	                    ' Download Resume'
-	                  )
-	                )
+	                'h3',
+	                null,
+	                'Resume'
 	              ),
+	              _react2.default.createElement('div', { className: 'btn-group' }),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'col-md-4' },
+	                { className: 'row resume' },
 	                _react2.default.createElement(
-	                  'ul',
-	                  null,
+	                  'div',
+	                  { className: 'col-md-3' },
 	                  _react2.default.createElement(
-	                    'li',
+	                    'a',
+	                    { href: 'assets/img/resume.pdf', download: true },
+	                    _react2.default.createElement(
+	                      'button',
+	                      { className: 'btn btn-default btn-sm', type: 'button', 'aria-haspopup': 'true' },
+	                      _react2.default.createElement('span', { className: 'glyphicon glyphicon-download', 'aria-hidden': 'true' }),
+	                      ' Download Resume'
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'col-md-4' },
+	                  _react2.default.createElement(
+	                    'ul',
 	                    null,
 	                    _react2.default.createElement(
-	                      'h3',
-	                      null,
-	                      _react2.default.createElement('span', { className: 'glyphicon glyphicon-apple', 'aria-hidden': 'true' }),
-	                      ' Education'
-	                    ),
-	                    _react2.default.createElement(
-	                      'ul',
+	                      'li',
 	                      null,
 	                      _react2.default.createElement(
-	                        'li',
+	                        'h3',
 	                        null,
-	                        _react2.default.createElement(
-	                          'strong',
-	                          null,
-	                          'Northwestern University Bootcamp (2017 | Evanston,IL)'
-	                        ),
-	                        ' \u2014 Project-based full-stack web development course within the School of Professional Studies'
+	                        _react2.default.createElement('span', { className: 'glyphicon glyphicon-apple', 'aria-hidden': 'true' }),
+	                        ' Education'
 	                      ),
 	                      _react2.default.createElement(
-	                        'li',
+	                        'ul',
 	                        null,
 	                        _react2.default.createElement(
-	                          'strong',
+	                          'li',
 	                          null,
-	                          'Starter League (2013 | Chicago, IL)'
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            'Northwestern University Bootcamp (2017 | Evanston,IL)'
+	                          ),
+	                          ' \u2014 Project-based full-stack web development course within the School of Professional Studies'
 	                        ),
-	                        ' \u2014 Advanced HTML5 / CSS3 and web design courses.'
-	                      ),
-	                      _react2.default.createElement(
-	                        'li',
-	                        null,
 	                        _react2.default.createElement(
-	                          'strong',
+	                          'li',
 	                          null,
-	                          'Creative Circus (2010 | Atlanta, GA)'
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            'Starter League (2013 | Chicago, IL)'
+	                          ),
+	                          ' \u2014 Advanced HTML5 / CSS3 and web design courses.'
 	                        ),
-	                        ' \u2014 Front end development program specializing in pixel-perfect design and user experience.'
-	                      ),
-	                      _react2.default.createElement(
-	                        'li',
-	                        null,
 	                        _react2.default.createElement(
-	                          'strong',
+	                          'li',
 	                          null,
-	                          'Notre Dame Law School, JD, cum laude (2005 | Notre Dame, IN)'
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            'Creative Circus (2010 | Atlanta, GA)'
+	                          ),
+	                          ' \u2014 Front end development program specializing in pixel-perfect design and user experience.'
 	                        ),
-	                        ' \u2014 Dean\u2019s List \u201903-05, awarded highest grade in Evidence and Remedies classes, attended Notre Dame Program of International Law (London, England \u201903-\u201904'
-	                      ),
-	                      _react2.default.createElement(
-	                        'li',
-	                        null,
 	                        _react2.default.createElement(
-	                          'strong',
+	                          'li',
 	                          null,
-	                          'Barnard College, Columbia University, BA magna cum laude (2002| NY, NY)'
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            'Notre Dame Law School, JD, cum laude (2005 | Notre Dame, IN)'
+	                          ),
+	                          ' \u2014 Dean\u2019s List \u201903-05, awarded highest grade in Evidence and Remedies classes, attended Notre Dame Program of International Law (London, England \u201903-\u201904'
 	                        ),
-	                        ' \u2014 Dean\u2019s List \u201999 - \u201901; Academic All Ivy \u201902, Barnard College Leadership Award 2002, Columbia University Leadership Award \u201902, Rhodes Scholar nominee. Columbia University Women\u2019s Crew \u201998-\u201902, Crew Captain \u201901-\u201902'
+	                        _react2.default.createElement(
+	                          'li',
+	                          null,
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            'Barnard College, Columbia University, BA magna cum laude (2002| NY, NY)'
+	                          ),
+	                          ' \u2014 Dean\u2019s List \u201999 - \u201901; Academic All Ivy \u201902, Barnard College Leadership Award 2002, Columbia University Leadership Award \u201902, Rhodes Scholar nominee. Columbia University Women\u2019s Crew \u201998-\u201902, Crew Captain \u201901-\u201902'
+	                        )
 	                      )
 	                    )
 	                  )
-	                )
-	              ),
-	              _react2.default.createElement('div', { className: 'col-md-1' }),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'col-md-4' },
+	                ),
+	                _react2.default.createElement('div', { className: 'col-md-1' }),
 	                _react2.default.createElement(
-	                  'ul',
-	                  null,
+	                  'div',
+	                  { className: 'col-md-4' },
 	                  _react2.default.createElement(
-	                    'li',
+	                    'ul',
 	                    null,
 	                    _react2.default.createElement(
-	                      'h3',
-	                      null,
-	                      _react2.default.createElement('span', { className: 'glyphicon glyphicon-console', 'aria-hidden': 'true' }),
-	                      ' Experience'
-	                    ),
-	                    _react2.default.createElement(
-	                      'ul',
+	                      'li',
 	                      null,
 	                      _react2.default.createElement(
-	                        'li',
+	                        'h3',
 	                        null,
-	                        _react2.default.createElement(
-	                          'strong',
-	                          null,
-	                          'Creative, Don\u2019t Call Me Oscar (2010 - present)'
-	                        ),
-	                        ' \u2014 Created viral blog with massive global reach of several million, featured annually in Vanity Fair, Today, Daily Mail, People, Chicago Tribune, Mashable, Huffington Post, BuzzFeed, etc. @dontcallmeoscar'
+	                        _react2.default.createElement('span', { className: 'glyphicon glyphicon-console', 'aria-hidden': 'true' }),
+	                        ' Experience'
 	                      ),
 	                      _react2.default.createElement(
-	                        'li',
+	                        'ul',
 	                        null,
 	                        _react2.default.createElement(
-	                          'strong',
+	                          'li',
 	                          null,
-	                          'Small Business Websites and Digital Presence (2013 - 2017)'
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            'Creative, Don\u2019t Call Me Oscar (2010 - present)'
+	                          ),
+	                          ' \u2014 Created viral blog with massive global reach of several million, featured annually in Vanity Fair, Today, Daily Mail, People, Chicago Tribune, Mashable, Huffington Post, BuzzFeed, etc. @dontcallmeoscar'
 	                        ),
-	                        ' \u2014 Establish digital presence and improved SEO for local businesses for clients to maintain. Examples: simplifycjs.com (implement graphic design) | salliestanleystudio.com (organize body of work into concise digital portfolio) | willowwood-preschool.org (create site and MailChimp campaign for school to maintain)'
-	                      ),
-	                      _react2.default.createElement(
-	                        'li',
-	                        null,
 	                        _react2.default.createElement(
-	                          'strong',
+	                          'li',
 	                          null,
-	                          'Attorney, Bankruptcy and Complex Litigation (2005 \u2013 2010)'
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            'Small Business Websites and Digital Presence (2013 - 2017)'
+	                          ),
+	                          ' \u2014 Establish digital presence and improved SEO for local businesses for clients to maintain. Examples: simplifycjs.com (implement graphic design) | salliestanleystudio.com (organize body of work into concise digital portfolio) | willowwood-preschool.org (create site and MailChimp campaign for school to maintain)'
 	                        ),
-	                        ' \u2014 Front end development program specializing in pixel-perfect design and user experience.'
+	                        _react2.default.createElement(
+	                          'li',
+	                          null,
+	                          _react2.default.createElement(
+	                            'strong',
+	                            null,
+	                            'Attorney, Bankruptcy and Complex Litigation (2005 \u2013 2010)'
+	                          ),
+	                          ' \u2014 Front end development program specializing in pixel-perfect design and user experience.'
+	                        )
 	                      )
 	                    )
 	                  )
@@ -28362,7 +28384,7 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'aboutSectionEnd' })
+	        _react2.default.createElement('div', { className: 'container-fluid aboutSectionEnd' })
 	      );
 	    }
 	  }]);

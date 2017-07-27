@@ -6,34 +6,28 @@ import { connect } from 'react-redux';
 
 class ProjectDetail extends Component {
 	render() {
-		//if this.props.book doens't exist yet then return early; initial check in state
+		// if this.props.book doens't exist yet then return early; initial check in state
 		if (!this.props.project){
 
 			return (
-				<section className="container-fluid rw-wrapper codeContainer">
-					<div className="row">
-						<div className="col-md-12 text-center codeHero">
-							<h1>I build beautiful interactive websites.</h1>
-
-							<h3 className="codeh3">My favorite apps are below.  If you have a second, <br /> click one to see the details.</h3>
+				
+						<div className="col-md-8">
+							
 						</div>
-					</div>
-				</section>
+					
 			);
-			//once they click on a book it will call the app state to rerender at which point this.props.book 
-			//will be defined and then we'll go to the next statement and render the selected book
+			
 		}
 
 
 		
 			return (
-				<section className="container-fluid codeContainer">
-					<div className="row">
-						<div className="col-md-12">
+				// <section className="container-fluid codeContainer">
+				// 	<div className="row">
+						<div className="col-md-8 codeContainer">
 							<ul>
 								<li>
-									<h3>Project Title: </h3>
-									{this.props.project.title}
+									<h3>Title: </h3>{this.props.project.title}
 
 								</li>
 								<li>
@@ -42,36 +36,41 @@ class ProjectDetail extends Component {
 								</li>
 								<li>
 									<h3>Github Repo: </h3>
-									{this.props.project.githubrepo}
+									<a href={this.props.project.githubrepo}>{this.props.project.githubrepo}</a>
+									
 								</li>
-								<li>
-									<h3>Summary: </h3>
-									{this.props.project.summary}
+								
+									
 
 										<ul className="row screenshotList">
-								            <li className="col-xs-4 text-center">
+								            <li className="col-xs-6 text-center detailGroup">
 								              <div className="screenshot"></div>
-								              <h3>Purpose</h3>
+								              <h3>Summary</h3>
+								              <p className='detailText'>{this.props.project.summary}</p>
+								            </li>
+								            <li className="col-xs-6 text-center detailGroup">
+								              <div className="screenshot"></div>
+								              <h3>Screenshot 1</h3>
 								              <p className='detailText'>{this.props.project.detail1}</p>
 								            </li>
-								            <li className="col-xs-4 text-center">
+								            <li className="col-xs-6 text-center detailGroup">
 								              <div className="screenshot"></div>
-								              <h3>Functionality</h3>
+								              <h3>Screenshot 2</h3>
 								              <p className='detailText'>{this.props.project.detail2}</p>
 								            </li>
-								            <li className="col-xs-4 text-center">
+								            <li className="col-xs-6 text-center detailGroup">
 								              <div className="screenshot"></div>
 								              <h3>Development Role</h3>
 								              <p className='detailText'>{this.props.project.detail3}</p>
 								            </li>
 								        </ul>
 
-								</li>
+							
 								
 							</ul>
 						</div>
-					</div>
-				</section>
+				// 	</div>
+				// </section>
 			);
 		
 	}

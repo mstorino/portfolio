@@ -7,7 +7,7 @@ export default class AboutBio extends Component {
   render() {
     return (
 
-    <section className="container-fluid aboutSection">
+    <section className="container aboutSection">
   
       <div className="row">
         <div className="col-md-12 spacer"></div>
@@ -37,7 +37,7 @@ export default class AboutBio extends Component {
         <div className="col-md-9 borderBox">
 
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-12">
               <ul className="aboutLinks">
                       <li>
                         <a href="https://github.com/mstorino"><img border="0" alt="github" src="assets/img/github3.png" width="30" height="30"/>github.com/mstorino</a>
@@ -53,8 +53,7 @@ export default class AboutBio extends Component {
                 </ul>
             </div>
 
-            <div className="col-md-4">cool image here
-            </div>
+            
           </div> 
         </div> 
       </div> 

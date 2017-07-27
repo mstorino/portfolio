@@ -37,15 +37,26 @@ class ProjectList extends Component {
 	
 	render() {
 		return (
-			<section className="projectSection container-fluid">
-				<div className="row">
-					<ul className="list-group col-md-12">
+			
+				<div className="col-md-4 projectListGroup">
+					<ul className="list-group">
 						{this.renderList()}
 					</ul>
 				</div>
-			</section>
+			
 		)
 	}
+	// render() {
+	// 	return (
+	// 		<section className="projectSection container-fluid">
+	// 			<div className="row">
+	// 				<ul className="list-group col-md-4">
+	// 					{this.renderList()}
+	// 				</ul>
+	// 			</div>
+	// 		</section>
+	// 	)
+	// }
 
 }
 

@@ -14,10 +14,24 @@ export default class Code extends Component {
     return (
       <div>
       	<TopNav />
+        <section className="container-fluid rw-wrapper">
+          <div className="row">
+            <div className="col-md-12 text-center codeHero">
+              <h1>I build beautiful interactive websites.</h1>
+
+              <h3 className="codeh3">My apps are below.  If you have a second, <br /> click one to see the details.</h3>
+            </div>
+          </div>
+        </section>
       	
-      	<ProjectDetail />
-      	<ProjectList />
-      	
+        <section className="container-fluid codeListContainer">
+          <div className= "row">
+          	
+          	<ProjectList />
+            <ProjectDetail />
+          </div>
+        </section>
+
       	<BottomNav />
       </div>
     );
