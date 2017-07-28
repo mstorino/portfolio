@@ -10,7 +10,7 @@ export default class TopNav extends Component {
 		<nav className="navbar navbar-default topNav">
 		  
 		    <div className="navbar-header">
-		      <Link className="navbar-brand" to="/">Maggie Storino</Link>
+		      <Link className="navbar-brand" to="/portfolio">Maggie Storino</Link>
 		    </div>
 		    <div className="navContainerTest">
 		      

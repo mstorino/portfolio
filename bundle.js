@@ -26770,11 +26770,11 @@
 			githubrepo: 'https://github.com/mstorino/buber',
 			summary: 'Babysitting + Uber = Buber. Unlike exisiting babysitter services, Buber allows users to see what babysitters are immediately available so that users may book local, trusted babysitters in real time.',
 			technologiesUsed: 'MERN, Bootstrap, Javascript, Node.js, Express, MongoDB, Mongoose, Passport and React.js.',
-			image1: "/assets/img/buber1.jpg",
-			image2: "/assets/img/buber3.jpg",
-			image3: "/assets/img/buber4.jpg",
-			image4: "/assets/img/buber5.jpg",
-			image5: "/assets/img/buber2.jpg",
+			image1: "/portfolio/assets/img/buber1.jpg",
+			image2: "/portfolio/assets/img/buber3.jpg",
+			image3: "/portfolio/assets/img/buber4.jpg",
+			image4: "/portfolio/assets/img/buber5.jpg",
+			image5: "/portfolio/assets/img/buber2.jpg",
 			detail1: 'The babysitters are refined to your neighborhood. Buber utilized passport to allow users to login and create a profile. Caretakers then book a sitter for immediate or future appointments. Babysitters toggle on/off their availability and confirm pending appointment requests.',
 			detail2: "Built RESTful API and server routes, implemented React.js, designed front-end and logos."
 		}, { featured: true,
@@ -27119,7 +27119,7 @@
 											{ className: 'navbar-header' },
 											_react2.default.createElement(
 													_reactRouterDom.Link,
-													{ className: 'navbar-brand', to: '/' },
+													{ className: 'navbar-brand', to: '/portfolio' },
 													'Maggie Storino'
 											)
 									),
