@@ -44,17 +44,16 @@ constructor(props) {
         <div>
           <ul className="nav navbar-nav bottomList">
            
-
-            <li>
-              <Link className="blogLink" to="/blog">Blog</Link>
-            </li>
-            
             <li>
               <Link className="codeLink" to="/code">Code</Link>
             </li>
             
             <li>
               <Link className="contactLink" to="/contact">Bio/Contact</Link>
+            </li>
+
+            <li>
+              <a href="https://dontcallmeoscar.com/">Blog</a>
             </li>
             
           </ul>

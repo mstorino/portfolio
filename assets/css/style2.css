@@ -466,3 +466,7 @@ ul.aboutLinks li:hover{
 .detailText {
 	text-align: justify;
 }
+
+.bioLinks a {
+	text-transform: none;
+}

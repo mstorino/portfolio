@@ -15,11 +15,11 @@ export default class AboutBio extends Component {
 
       <div className="row">  
         <div className="col-md-3 borderBox">
-          <h3>Everything you want to know</h3> 
+          <h3>Everything you may want to know</h3> 
         </div>
         
-        <div className="col-md-9 borderBox">
-          <p>My creative work, the viral project <a href="https://www.dontcallmeoscar.com">Don't Call Me Oscar</a>, has been featured year-after-year by Vanity Fair, People, Huffington Post, Today, Good Morning America, CBS, the Daily Mail, and more, reaching an audience of several million annually. I received a JD at Notre Dame Law School before diving into the world of full stack development at the Creative Circus, Starter League and Northwestern University.
+        <div className="col-md-9 bioLinks">
+          <p>My creative work, the viral project <a href="https://www.dontcallmeoscar.com">Don't Call Me Oscar</a>, has been featured year-after-year by <a href="http://www.vanityfair.com/hollywood/2017/02/oscar-babies-2017-best-picture-recreations-kids-la-la-land">Vanity Fair</a>, <a href="http://people.com/awards/oscars-2017-best-picture-nominees-kids-posters/">People</a>, <a href="http://www.huffingtonpost.com/entry/adorable-kids-recreate-the-2016-oscar-nominated-movie-posters_us_56cf14cee4b0bf0dab30e69e">Huffington Post</a>, <a href="http://www.today.com/popculture/oscar-greats-see-these-little-girls-re-enact-year-s-t108559">Today</a>, <a href="http://www.indiatimes.com/culture/who-we-are/adorable-sisters-recreate-the-looks-of-oscars-best-picture-nominees-in-the-cutest-way-possible-272203.html">India Times</a>, <a href="http://www.dailymail.co.uk/news/article-4256070/Children-enact-Oscar-nominees-year.html"> Daily Mail</a>, <a href="http://www.chicagotribune.com/lifestyles/ct-kids-dont-call-me-oscars-parenting-20170228-story.html">Chicago Tribune</a>, and more, reaching an audience of several million annually. I received a JD at Notre Dame Law School before diving into the world of full stack development at the Creative Circus, Starter League and Northwestern University.
           </p>
         </div>
 

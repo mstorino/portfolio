@@ -27246,15 +27246,6 @@
 	                null,
 	                _react2.default.createElement(
 	                  _reactRouterDom.Link,
-	                  { className: 'blogLink', to: '/blog' },
-	                  'Blog'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _reactRouterDom.Link,
 	                  { className: 'codeLink', to: '/code' },
 	                  'Code'
 	                )
@@ -27266,6 +27257,15 @@
 	                  _reactRouterDom.Link,
 	                  { className: 'contactLink', to: '/contact' },
 	                  'Bio/Contact'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://dontcallmeoscar.com/' },
+	                  'Blog'
 	                )
 	              )
 	            )
@@ -27960,12 +27960,12 @@
 	            _react2.default.createElement(
 	              'h3',
 	              null,
-	              'Everything you want to know'
+	              'Everything you may want to know'
 	            )
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'col-md-9 borderBox' },
+	            { className: 'col-md-9 bioLinks' },
 	            _react2.default.createElement(
 	              'p',
 	              null,
@@ -27975,7 +27975,49 @@
 	                { href: 'https://www.dontcallmeoscar.com' },
 	                'Don\'t Call Me Oscar'
 	              ),
-	              ', has been featured year-after-year by Vanity Fair, People, Huffington Post, Today, Good Morning America, CBS, the Daily Mail, and more, reaching an audience of several million annually. I received a JD at Notre Dame Law School before diving into the world of full stack development at the Creative Circus, Starter League and Northwestern University.'
+	              ', has been featured year-after-year by ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.vanityfair.com/hollywood/2017/02/oscar-babies-2017-best-picture-recreations-kids-la-la-land' },
+	                'Vanity Fair'
+	              ),
+	              ', ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://people.com/awards/oscars-2017-best-picture-nominees-kids-posters/' },
+	                'People'
+	              ),
+	              ', ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.huffingtonpost.com/entry/adorable-kids-recreate-the-2016-oscar-nominated-movie-posters_us_56cf14cee4b0bf0dab30e69e' },
+	                'Huffington Post'
+	              ),
+	              ', ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.today.com/popculture/oscar-greats-see-these-little-girls-re-enact-year-s-t108559' },
+	                'Today'
+	              ),
+	              ', ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.indiatimes.com/culture/who-we-are/adorable-sisters-recreate-the-looks-of-oscars-best-picture-nominees-in-the-cutest-way-possible-272203.html' },
+	                'India Times'
+	              ),
+	              ', ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.dailymail.co.uk/news/article-4256070/Children-enact-Oscar-nominees-year.html' },
+	                ' Daily Mail'
+	              ),
+	              ', ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'http://www.chicagotribune.com/lifestyles/ct-kids-dont-call-me-oscars-parenting-20170228-story.html' },
+	                'Chicago Tribune'
+	              ),
+	              ', and more, reaching an audience of several million annually. I received a JD at Notre Dame Law School before diving into the world of full stack development at the Creative Circus, Starter League and Northwestern University.'
 	            )
 	          )
 	        ),
