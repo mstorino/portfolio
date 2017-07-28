@@ -26768,32 +26768,41 @@
 			number: 'I',
 			title: 'Buber',
 			githubrepo: 'https://github.com/mstorino/buber',
-			summary: 'Babysitting + Uber = Buber. A way to book local, trusted babysitters in real time.',
+			summary: 'Babysitting + Uber = Buber. Unlike exisiting babysitter services, Buber allows users to see what babysitters are immediately available so that users may book local, trusted babysitters in real time.',
 			technologiesUsed: 'MERN, Bootstrap, Javascript, Node.js, Express, MongoDB, Mongoose, Passport and React.js.',
-			image1: "assets/img/github3.png",
-			detail1: 'Book future appointments or hire immediately. Unlike exisiting sites, Buber only displays sitters within your neighborhood.',
-			detail2: 'Caretakers create a family profile and see which sitters are available. Stters, create a profile and toggle on/off availability.',
-			detail3: "Built RESTful routes for server and api calls, created react components for sitter lists and details, designed front-end and logos"
+			image1: "/assets/img/buber1.jpg",
+			image2: "/assets/img/buber3.jpg",
+			image3: "/assets/img/buber4.jpg",
+			image4: "/assets/img/buber5.jpg",
+			image5: "/assets/img/buber2.jpg",
+			detail1: 'The babysitters are refined to your neighborhood. Buber utilized passport to allow users to login and create a profile. Caretakers then book a sitter for immediate or future appointments. Babysitters toggle on/off their availability and confirm pending appointment requests.',
+			detail2: "Built RESTful API and server routes, implemented React.js, designed front-end and logos."
 		}, { featured: true,
 			number: 'II',
 			title: 'TutorKarma',
 			githubrepo: 'https://github.com/mstorino/tutorkarma',
 			summary: 'Community based tutoring application utilizing a data persistence layer (MySQL) with full CRUD capabiliites.',
 			technologiesUsed: 'Git, Bootstrap, JavaScript, Node, npm, Express.js, MySQL, Schema and Seed files, Sequelize.js, RESTful Routes, External APIs, jQuery and Handlebars.',
-			image1: "url('../assets/css/portfolio3.jpg')",
-			detail1: 'Data-focused application connecting students with local tutors filtered by area of expertise.',
-			detail2: 'Students find and book tutors through a customized student portal that displays tutors based on subject matter or name.',
-			detail3: 'Responsible for API routes, Handlebars, jQuery, design for tutor and user landing pages.'
+			image1: "/assets/img/tk1.jpg",
+			image2: "/assets/img/tk3.jpg",
+			image3: "/assets/img/tk2.jpg",
+			image4: "/assets/img/tk4.jpg",
+			image5: "/assets/img/tk5.jpg",
+			detail1: 'tutorKarma connects students with local tutors filtered by area of expertise. Students find and book tutors through a customized student portal that displays tutors based on subject matter or name.',
+			detail2: 'Built API routes, implemented Handlebars and jQuery functionality to sort tutors and subject matter, established landing page design and assets.'
 		}, { featured: true,
 			number: 'III',
 			title: 'Concession Butler',
 			githubrepo: 'https://github.com/mstorino/concessionbutler',
 			summary: 'Web application for expediting concession stand food orders.',
 			technologiesUsed: 'Bootstrap, jQuery, Pressure.js, Moment.js, Firebase',
-			image1: "url('../assets/css/portfolio3.jpg')",
-			detail1: 'Developed fluid interactive application that expedites concession purchases',
-			detail2: 'Orders are taken and the total is calculated. Then the order is submitted to the the cook for expediting.',
-			detail3: 'Responsible for cohesive design, graceful mobile-first CSS, lightweight assets and logo'
+			image1: "/assets/img/cb1.jpg",
+			image2: "/assets/img/cb2.jpg",
+			image3: "/assets/img/cb3.jpg",
+			image4: "/assets/img/cb4.jpg",
+			image5: "/assets/img/cb5.jpg",
+			detail1: 'Concession Butler is a fluid interactive application that allows users to take orders, calculates the total due, calculates the change owed to the customer and sends the order to the concession stand for expediting.',
+			detail2: 'Created cohesive design, graceful mobile-first CSS, lightweight assets and logo.'
 		}, { featured: false,
 			number: '',
 			title: 'FriendFinder',
@@ -27460,7 +27469,7 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ className: 'col-md-4 projectListGroup' },
+					{ className: 'col-md-3 projectListGroup' },
 					_react2.default.createElement(
 						'ul',
 						{ className: 'list-group' },
@@ -27583,7 +27592,7 @@
 				// if this.props.book doens't exist yet then return early; initial check in state
 				if (!this.props.project) {
 
-					return _react2.default.createElement('div', { className: 'col-md-8' });
+					return _react2.default.createElement('div', { className: 'col-md-9' });
 				}
 
 				return (
@@ -27591,7 +27600,7 @@
 					// 	<div className="row">
 					_react2.default.createElement(
 						'div',
-						{ className: 'col-md-8 codeContainer' },
+						{ className: 'col-sm-12 col-md-9 codeContainer' },
 						_react2.default.createElement(
 							'ul',
 							null,
@@ -27599,43 +27608,29 @@
 								'li',
 								null,
 								_react2.default.createElement(
-									'h3',
+									'h2',
 									null,
-									'Title: '
-								),
-								this.props.project.title
-							),
-							_react2.default.createElement(
-								'li',
-								null,
-								_react2.default.createElement(
-									'h3',
-									null,
-									'Technologies Used: '
-								),
-								this.props.project.technologiesUsed
-							),
-							_react2.default.createElement(
-								'li',
-								null,
-								_react2.default.createElement(
-									'h3',
-									null,
-									'Github Repo: '
-								),
-								_react2.default.createElement(
-									'a',
-									{ href: this.props.project.githubrepo },
-									this.props.project.githubrepo
+									this.props.project.title,
+									' | ',
+									_react2.default.createElement(
+										'a',
+										{ href: this.props.project.githubrepo },
+										this.props.project.githubrepo
+									)
 								)
+							),
+							_react2.default.createElement(
+								'li',
+								null,
+								_react2.default.createElement('img', { className: 'screenshot', border: '0', alt: this.props.project.title, src: this.props.project.image1 })
 							),
 							_react2.default.createElement(
 								'ul',
 								{ className: 'row screenshotList' },
 								_react2.default.createElement(
 									'li',
-									{ className: 'col-xs-6 text-center detailGroup' },
-									_react2.default.createElement('div', { className: 'screenshot' }),
+									{ className: 'col-xs-12 col-sm-6 detailGroup' },
+									_react2.default.createElement('img', { border: '0', alt: this.props.project.title, src: this.props.project.image5, width: '100%' }),
 									_react2.default.createElement(
 										'h3',
 										null,
@@ -27649,12 +27644,12 @@
 								),
 								_react2.default.createElement(
 									'li',
-									{ className: 'col-xs-6 text-center detailGroup' },
-									_react2.default.createElement('div', { className: 'screenshot' }),
+									{ className: 'col-xs-6 detailGroup' },
+									_react2.default.createElement('img', { className: 'screenshot', border: '0', alt: this.props.project.title, src: this.props.project.image3 }),
 									_react2.default.createElement(
 										'h3',
 										null,
-										'Screenshot 1'
+										'Functionality'
 									),
 									_react2.default.createElement(
 										'p',
@@ -27664,12 +27659,12 @@
 								),
 								_react2.default.createElement(
 									'li',
-									{ className: 'col-xs-6 text-center detailGroup' },
-									_react2.default.createElement('div', { className: 'screenshot' }),
+									{ className: 'col-xs-6 detailGroup' },
+									_react2.default.createElement('img', { border: '0', alt: this.props.project.title, src: this.props.project.image4, width: '100%' }),
 									_react2.default.createElement(
 										'h3',
 										null,
-										'Screenshot 2'
+										'Development Responsibilities'
 									),
 									_react2.default.createElement(
 										'p',
@@ -27679,17 +27674,17 @@
 								),
 								_react2.default.createElement(
 									'li',
-									{ className: 'col-xs-6 text-center detailGroup' },
-									_react2.default.createElement('div', { className: 'screenshot' }),
+									{ className: 'col-xs-6 detailGroup' },
+									_react2.default.createElement('img', { className: 'screenshot', border: '0', alt: this.props.project.title, src: this.props.project.image2 }),
 									_react2.default.createElement(
 										'h3',
 										null,
-										'Development Role'
+										'Technologies Used'
 									),
 									_react2.default.createElement(
 										'p',
 										{ className: 'detailText' },
-										this.props.project.detail3
+										this.props.project.technologiesUsed
 									)
 								)
 							)

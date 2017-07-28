@@ -11,7 +11,7 @@ class ProjectDetail extends Component {
 
 			return (
 				
-						<div className="col-md-8">
+						<div className="col-md-9">
 							
 						</div>
 					
@@ -24,45 +24,50 @@ class ProjectDetail extends Component {
 			return (
 				// <section className="container-fluid codeContainer">
 				// 	<div className="row">
-						<div className="col-md-8 codeContainer">
+						<div className="col-sm-12 col-md-9 codeContainer">
 							<ul>
 								<li>
-									<h3>Title: </h3>{this.props.project.title}
-
-								</li>
-								<li>
-									<h3>Technologies Used: </h3>
-									{this.props.project.technologiesUsed}
-								</li>
-								<li>
-									<h3>Github Repo: </h3>
-									<a href={this.props.project.githubrepo}>{this.props.project.githubrepo}</a>
+									<h2>{this.props.project.title} | <a href={this.props.project.githubrepo}>{this.props.project.githubrepo}</a></h2> 
+									
 									
 								</li>
-								
-									
+								<li>
+									 <img className="screenshot" border="0" alt={this.props.project.title} src={this.props.project.image1}/>
+								             
+								</li>
 
 										<ul className="row screenshotList">
-								            <li className="col-xs-6 text-center detailGroup">
-								              <div className="screenshot"></div>
-								              <h3>Summary</h3>
-								              <p className='detailText'>{this.props.project.summary}</p>
+								            <li className="col-xs-12 col-sm-6 detailGroup">
+								            	
+								            		<img border="0" alt={this.props.project.title} src={this.props.project.image5} width="100%"/>
+								     		
+								              	<h3>Summary</h3>
+								              	<p className='detailText'>{this.props.project.summary}</p>
 								            </li>
-								            <li className="col-xs-6 text-center detailGroup">
-								              <div className="screenshot"></div>
-								              <h3>Screenshot 1</h3>
+
+								            <li className="col-xs-6 detailGroup">
+								              <img className="screenshot" border="0" alt={this.props.project.title} src={this.props.project.image3}/>
+								              <h3>Functionality</h3>
 								              <p className='detailText'>{this.props.project.detail1}</p>
 								            </li>
-								            <li className="col-xs-6 text-center detailGroup">
-								              <div className="screenshot"></div>
-								              <h3>Screenshot 2</h3>
+
+								            <li className="col-xs-6 detailGroup">
+								            	
+								            	  <img border="0" alt={this.props.project.title} src={this.props.project.image4} width="100%"/>
+								            	
+
+								              <h3>Development Responsibilities</h3>
 								              <p className='detailText'>{this.props.project.detail2}</p>
 								            </li>
-								            <li className="col-xs-6 text-center detailGroup">
-								              <div className="screenshot"></div>
-								              <h3>Development Role</h3>
-								              <p className='detailText'>{this.props.project.detail3}</p>
+								            
+								            <li className="col-xs-6 detailGroup">
+								              <img className="screenshot" border="0" alt={this.props.project.title} src={this.props.project.image2}/>
+								              <h3>Technologies Used</h3>
+								              <p className='detailText'>{this.props.project.technologiesUsed}</p>
+								             
 								            </li>
+								            
+								            
 								        </ul>
 
 							

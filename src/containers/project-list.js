@@ -38,7 +38,7 @@ class ProjectList extends Component {
 	render() {
 		return (
 			
-				<div className="col-md-4 projectListGroup">
+				<div className="col-md-3 projectListGroup">
 					<ul className="list-group">
 						{this.renderList()}
 					</ul>
