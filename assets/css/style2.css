@@ -374,10 +374,10 @@ ul.aboutLinks li:hover{
 
 .codeHero {
 	min-height: 400px;
-	border-top: 10px solid papayawhip;
+	/*border-top: 10px solid papayawhip;
 	border-bottom: 10px solid mistyrose;
 	border-right: 10px solid papayawhip;
-	border-left: 10px solid mistyrose;
+	border-left: 10px solid mistyrose;*/
 	padding-top:20px;
 	padding-bottom:30px;
 }
@@ -470,3 +470,48 @@ ul.aboutLinks li:hover{
 .bioLinks a {
 	text-transform: none;
 }
+
+
+
+.unicorn {
+/*   display: block; */
+/*   width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffe4e1; */
+    
+/*   box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04); */
+  position: absolute;
+  -webkit-animation: moveX 12.10s linear 0s infinite alternate, moveY 12.8s linear 0s infinite alternate;
+  -moz-animation: moveX 12.10s linear 0s infinite alternate, moveY 12.8s linear 0s infinite alternate;
+  -o-animation: moveX 12.10s linear 0s infinite alternate, moveY 12.8s linear 0s infinite alternate;
+  animation: moveX 12.10s linear 0s infinite alternate, moveY 12.8s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 840px; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 840px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 840px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 840px; }
+}
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 240px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 240px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 240px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 240px; }
+}
+
+
+

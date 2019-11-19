@@ -17,9 +17,14 @@ export default class Code extends Component {
         <section className="container-fluid rw-wrapper">
           <div className="row">
             <div className="col-md-12 text-center codeHero">
+
+                  
+                
               <h1>I build beautiful interactive websites.</h1>
 
               <h3 className="codeh3">My apps are below.  If you have a second, <br /> click one to see the details.</h3>
+
+              <img className="unicorn" alt="github" src="/assets/img/unicorn.png"/>
             </div>
           </div>
         </section>
